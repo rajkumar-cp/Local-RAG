@@ -8,9 +8,18 @@ Here is your reference {reference}
 Here is your question {question}
 """
 chat = ChatPromptTemplate.from_template(template)
-#chain = chat | model
-formatted_prompt = chat.format_prompt(reference="My age is 99", question="Capital of India?")
+chatActive = True
+while chatActive:
+    question = input("Question (done to quit): ")
+    if question == "done":
+        chatActive = False
+        break
+    elif question == "":
+        chatActive = False
+        break
+    #chain = chat | model
+    formatted_prompt = chat.format_prompt(reference="My age is 99", question=question)
 
-result = model.invoke(formatted_prompt)
-#result = chain.invoke({"reference": "My age is 99", "question": "Capital of India?"})
-print(result)
+    result = model.invoke(formatted_prompt)
+    #result = chain.invoke({"reference": "My age is 99", "question": "Capital of India?"})
+    print(result)
