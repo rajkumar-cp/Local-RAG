@@ -3,3 +3,10 @@ langchain-ollama
 langchain-chroma
 pandas
 langchain-core
+langchain_community
+unstructured[all]
+networkx
+msoffcrypto-tool
+docx2txt
+openpyxl
+jq
