@@ -1,7 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import *
 
-from vector import retriever
+from RAG.vector import retriever
 
 model = OllamaLLM(model="llama3.2")
 template = """
