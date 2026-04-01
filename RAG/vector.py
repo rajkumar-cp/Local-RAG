@@ -57,7 +57,7 @@ vector_store = Chroma(
     persist_directory=vector_db_location
 )
 
-documents = load_docs_from_directory("./RAG/References")
+documents = load_docs_from_directory("./RAG/Resources")
 ids = [f"doc_{i}" for i in range(len(documents))]
 vector_store.add_documents(documents=documents, ids=ids)
 

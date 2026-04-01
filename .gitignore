@@ -59,8 +59,8 @@ Thumbs.db
 .DS_Store
 
 # Project specific
-RAG/References/*
-!RAG/References/.gitkeep
+RAG/Resources/*
+!RAG/Resources/.gitkeep
 *.pdf
 *.docx
 *.xlsx

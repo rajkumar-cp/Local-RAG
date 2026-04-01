@@ -10,3 +10,4 @@ msoffcrypto-tool
 docx2txt
 openpyxl
 jq
+langchain-text-splitters
